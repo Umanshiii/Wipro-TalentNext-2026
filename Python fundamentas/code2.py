@@ -1,4 +1,4 @@
-#Write a program to check if a number is odd or even
+#Write a program to check if a number is positive, negative or zero
 
 num=int(input("Enter a number: "))
 
