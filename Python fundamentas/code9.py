@@ -10,7 +10,12 @@ O/P:4001
 '''
 
 def rev(num):
-    reverse=''
-    for i in range(len(str(num))-1,-1,-1):
-        reverse+=str(num)[i]
-    return int(reverse)
+    temp = num
+    reverse = 0
+
+    while temp > 0:
+        digit = temp % 10
+        reverse = reverse * 10 + digit
+        temp //= 10
+
+    return reverse
