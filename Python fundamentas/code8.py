@@ -6,8 +6,11 @@ O/P:10
 '''
 
 def sum_digits(num):
-    output=0
-    for i in str(num):
-        output+=int(i)
-    
+    output = 0
+
+    while num > 0:
+        digit = num % 10
+        output += digit
+        num //= 10
+
     return output
