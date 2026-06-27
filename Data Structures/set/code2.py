@@ -14,6 +14,6 @@ def intersection(set1, set2):
 
     return result
 
-set1=(2,3,4,6,67)
-set2=(3,4,6,77,2)
+set1={2,3,4,6,67}
+set2={3,4,6,77,2}
 print(intersection(set1,set2))
