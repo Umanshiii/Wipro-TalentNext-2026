@@ -6,14 +6,10 @@ Expected Output: [(10, 20, 100), (40, 50, 100), (70, 80, 100)]
 
 tup=[(10, 20, 40), (40, 50, 60), (70, 80, 90)]
 
-def replace(tup):
+for i in range(len(tup)):
 
-    for i in range(len(tup)):
+    lis=list(tup[i])
+    lis[-1]=100
+    tup[i]=tuple(lis)
 
-        lis=list(tup[i])
-        lis[-1]=100
-        tup[i]=tuple(lis)
-
-    return tup
-
-print(replace(tup))
+print(tup)
